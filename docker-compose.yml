@@ -2,8 +2,8 @@ services:
   geth: # this is Optimism's geth client
     build: .
     ports:
-      - 8545:8545       # RPC
-      - 8546:8546       # websocket
+      - 38545:8545       # RPC
+      - 38546:8546       # websocket
       - 30303:30303     # P2P TCP (currently unused)
       - 30303:30303/udp # P2P UDP (currently unused)
       - 7301:6060       # metrics
